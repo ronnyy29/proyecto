@@ -1,1 +1,8 @@
 Trabajo con otros archivos
+
+gid add
+git commit -m "agregar estilo!
+git push -u origen master ........... subir a la nuve 
+git pull origin master ........ actualizar los cambios
+
+
