@@ -6,3 +6,4 @@ git push -u origen master ........... subir a la nuve
 git pull origin master ........ actualizar los cambios
 
 
+git clone https://github.com/ronnyy29/proyecto.git ...........descargar poryecto
