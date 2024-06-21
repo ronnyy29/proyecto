@@ -1,84 +1,38 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #4a4a4a; /* Negro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Tienda de Ropa</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="#" method="POST" onsubmit="return validarFormulario()">
+            <h2>Iniciar Sesión</h2>
+            <div class="form-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+            <p class="forgot-password"><a href="#">¿Olvidaste tu contraseña?</a></p>
+        </form>
+    </div>
 
-.login-container {
-    width: 300px;
-    background-color: #9b59b6; /* Morado */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-}
+    <script>
+        function validarFormulario() {
+            // Aquí podrías agregar lógica de validación del formulario si es necesario
 
-.login-form {
-    text-align: center;
-}
+            // Redirigir al usuario al inicio después de iniciar sesión
+            window.location.href = "inicio.html";
 
-.login-form h2 {
-    margin-bottom: 20px;
-    color: #fff; /* Texto blanco */
-    font-size: 2rem;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #fff; /* Texto blanco */
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.8); /* Blanco con transparencia */
-    transition: background-color 0.3s ease;
-}
-
-.form-group input:focus {
-    background-color: #fff; /* Blanco */
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-.forgot-password {
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
-.forgot-password a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
-}
-
+            // Devolver false para evitar que el formulario se envíe directamente
+            return false;
+        }
+    </script>
+</body>
+</html>
