@@ -1,10 +1,10 @@
-/* Reset de estilos y estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #4a4a4a; /* Negro */
-    color: #fff; /* Texto blanco */
+    background-color: #4a4a4a;
+    color: #fff; 
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #9b59b6; /* Morado */
+    background-color: #9b59b6; 
     padding: 20px 0;
 }
 
@@ -57,7 +57,7 @@ h2 {
 }
 
 .contacto-info {
-    background-color: #9b59b6; /* Morado */
+    background-color: #9b59b6;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,7 +68,7 @@ h2 {
 }
 
 .formulario-contacto {
-    background-color: #9b59b6; /* Morado */
+    background-color: #9b59b6;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -93,7 +93,7 @@ h2 {
 }
 
 button {
-    background-color: #4a4a4a; /* Negro */
+    background-color: #4a4a4a; 
     color: #fff;
     border: none;
     padding: 10px 20px;
